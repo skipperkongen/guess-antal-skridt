@@ -22,8 +22,8 @@ def beregn_km(lat1, lon1, lat2, lon2):
     afstand_km = fugleflugt_km * EUCLID_MANHATTAN
     return afstand_km
 
-adr1 = input('Skriv den første adresse: ')
-adr2 = input('Skriv den anden adresse: ')
+adr1 = input('Skriv den første adresse eller dudu bliver sur: ')
+adr2 = input('Skriv den anden adresse eller guchigu får kød til aftensmad: ')
 
 # https://geocoder.readthedocs.io/providers/OpenStreetMap.html
 g1 = geocoder.osm(adr1.strip())
@@ -33,5 +33,5 @@ lat2, lon2 = g2.json['bbox']['northeast']
 
 afstand_km = beregn_km(lat1, lon1, lat2, lon2)
 antal_skridt = 1000*afstand_km / SKRIDT_METER
-print(f'kilometer: {afstand_km}')
-print(f'antal skridt: {antal_skridt}')
+print(f'kilometer: {round(afstand_km, 2)}')
+print(f'antal skridt: {int(antal_skridt)}')
