@@ -3,6 +3,8 @@ import math
 
 SKRIDT_METER = 0.59  # gennemsnitlig skridtlængde (Morgan)
 JORD_RADIUS = 6373.0  # jordens radius i kilometer
+# Vi skal korrigere for at man sjældent går i fugleflugtslinje
+# https://math.stackexchange.com/questions/2877479/average-ratio-of-manhattan-distance-to-euclidean-distance
 EUCLID_MANHATTAN = 1.27  # faktor mellem fugleflugt og faktisk afstand
 
 def beregn_km(lat1, lon1, lat2, lon2):
