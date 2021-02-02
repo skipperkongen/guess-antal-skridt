@@ -26,6 +26,6 @@ Kør programmet:
 $ python skridt.py                                                                                                                          [12:01:06]
 Skriv den første adresse: Hannovergade 2, 2300
 Skriv den anden adresse: Lybækgade 20, 2300
-kilometer: 0.46126805871761
-antal skridt: 781.8102690128984
+kilometer: 0.46
+antal skridt: 781
 ```
